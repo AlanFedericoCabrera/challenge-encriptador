@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1 class="a">
+                <img src="Vector.png" alt="=>Logo de alura con la inicial da letra a">
+            </h1>
+            <h1 class="titulo">
+                Encriptador
+            </h1>
+        </div>
+    </header>
+
+    <p class="minuscula">🚫 SOLAMENTE SE ADMITEN MINUSCULAS</p>
+
+    <main class="principal"> <!--Para indicarle al navegador que es la parte principal de nuestro pagina web-->
+
+        <section> <!-- Para encriptar mensaje-->
+            <p class="texto-encriptado">👇 Ingrese su texto 👇</p>
+            <textarea class="input_texto" type="text" placeholder="No se ah ingresado nada..." cols="50" rows="10"></textarea>
+
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+
+        </section>
+
+        <section> <!-- Mostrar el mensaje en la pantalla ya encriptado-->
+            <p class="texto-encriptado">👇 Texto incriptado 👇</p>
+            <textarea class="mensaje" type="text"cols="40" rows="20"></textarea>
+            <button class="copiar" onclick="copiar()">
+                Copiar
+            </button>
+        </section>
+    </main>
+    <script src="funcion.js"></script>
+
+    <footer>
+        <img src="Vector.png">
+        <p class="copyright">🔊Alan Cabrera-Alura-ChallegenEnciptacion🔊</p>
+    </footer>
+</body>
+</html>
